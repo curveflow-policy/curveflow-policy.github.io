@@ -241,7 +241,9 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Curvature-Guided Flow Matching via
+              SE(3)-Canonical Point Clouds for Robot
+              Imitation Learning</h1>
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
@@ -286,7 +288,7 @@
 
                   <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://anonymous.4open.science/r/curveflow-policy-36D6" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -341,7 +343,31 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Imitation learning has emerged as a pivotal
+paradigm for embodied agents to acquire complex manipu
+lation skills. However, in real-world environments charac
+terized by dynamic occlusions and viewpoint variations,
+existing 3D point cloud-based policies often suffer from
+instability and poor generalization, primarily due to the
+neglect of temporal geometric continuity. To address these
+challenges, this paper proposes a Canonical Curve Flow
+Policy for robust robot manipulation. Specifically, we in
+troduce a temporal-aware canonical point cloud represen
+tation framework that incorporates SE(3)-equivariance into
+temporal modeling. By synergistically aggregating cross
+frame geometric features, this framework significantly en
+hances perceptual robustness against unstructured distur
+bances. Furthermore, to overcome the limitations of linear
+trajectory assumptions in conventional rectified flow meth
+ods, we design a curvature-guided flow matching strat
+egy. This strategy facilitates the learning of probability
+aware nonlinear trajectories, enabling the generation pro
+cess to effectively circumvent low-likelihood regions of the
+data manifold for precise motion control. Extensive exper
+iments on Robomimic and RLBench benchmarks, as well
+as real-world robot tasks, demonstrate that the proposed
+method outperforms state-of-the-art baselines in both con
+vergence efficiency and task success rates.
           </p>
         </div>
       </div>
@@ -361,7 +387,8 @@
         <img src="static/images/pipeline.png" alt="First research result visualization" loading="lazy"/>
         <!-- TODO: Replace with description of this result -->
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Overview of the proposed CurveFlow framework. The pipeline integrates a Spatio-Temporal Canonical Representation module (left) for
+SE(3)-equivariant feature extraction and a Curvature-Guided Flow Matching Action Head (right) for precise motion generation.
         </h2>
       </div>
       <div class="item">
@@ -399,7 +426,7 @@
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+      <h2 class="title is-3">Simulated Experiments</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
@@ -419,7 +446,7 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+      <h2 class="title is-3">Real-World Experiments</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <!-- TODO: Add poster image for better preview -->
