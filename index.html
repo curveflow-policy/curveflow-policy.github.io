@@ -248,9 +248,8 @@
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="static/pdfs/paper.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -269,17 +268,6 @@
                     <span>Code</span>
                   </a>
                 </span>
-
-                <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
             </div>
           </div>
         </div>
@@ -360,8 +348,7 @@ vergence efficiency and task success rates.
         <img src="static/images/pipeline.png" alt="First research result visualization" loading="lazy"/>
         <!-- TODO: Replace with description of this result -->
         <h2 class="subtitle has-text-centered">
-          Overview of the proposed CurveFlow framework. The pipeline integrates a Spatio-Temporal Canonical Representation module (left) for
-SE(3)-equivariant feature extraction and a Curvature-Guided Flow Matching Action Head (right) for precise motion generation.
+          Figure presents the complete CurveFlow framework, which synergizes robust perception with precise motion generation. The pipeline begins with a Spatio-Temporal Canonical Representation module (left) that processes multi-step point clouds into a standardized coordinate system, ensuring SE(3)-equivariant feature extraction that is resilient to viewpoint shifts. These stable geometric features are then fed into the Curvature-Guided Flow Matching Action Head (right), which generates high-fidelity action trajectories by learning probability-aware paths rather than simple linear interpolations.
         </h2>
       </div>
       <!-- <div class="item">
@@ -375,14 +362,15 @@ SE(3)-equivariant feature extraction and a Curvature-Guided Flow Matching Action
         <!-- Your image here -->
         <img src="static/images/method.png" alt="Third research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+         (a) illustrates the Data Canonicalization Pipeline, the core mechanism that decouples intrinsic object geometry from global pose variations. To achieve this, the system first decentralizes the raw point cloud to remove translation bias , then utilizes an SO(3)-equivariant network to estimate the relative rotation , and finally applies an inverse transformation to map the observation into a unified "canonical" space. This explicit geometric standardization ensures that the policy learns consistent manipulation logic regardless of how the camera or objects are oriented in the scene.
+         (b) visualizes the theoretical advantage of our Curvature-Guided Flow Matching approach compared to traditional methods. While standard Rectified Flow forces the generation process along a rigid linear path (grey dashed line) that may cross into physically implausible low-likelihood regions, CurveFlow introduces learnable curvature coefficients to define a flexible non-linear trajectory (blue solid line). This allows the model to adaptively align the probability transport path with the natural geometry of the action manifold, resulting in smoother and more stable motion generation.
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
       <img src="static/images/tasks.png" alt="Fourth research result visualization" loading="lazy"/>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        Figure  demonstrates the real-world performance of CurveFlow across four diverse manipulation tasks: Sorting parts, Tower of Hanoi, Battery insertion, and Hammer cleanup. The execution sequences highlight the robot's capability to handle contact-rich operations and precise pick-and-place actions, such as the tight-tolerance alignment required for inserting a battery. These results validate that the proposed geometric constraints and curvature guidance successfully enable zero-shot transfer from simulation to real-world platforms without requiring additional fine-tuning.
       </h2>
     </div>
   </div>
