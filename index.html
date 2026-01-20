@@ -317,21 +317,21 @@
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
+<!--section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+      <!-- <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
         <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
+        <!-- <source src="static/videos/banner_video.mp4" type="video/mp4">
+      </video> -->
       <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
+      <!-- <h2 class="subtitle has-text-centered">
         Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
       </h2>
     </div>
-  </div>
-</section>
+  </div> --> -->
+<!--/section>
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
@@ -391,23 +391,23 @@ vergence efficiency and task success rates.
 SE(3)-equivariant feature extraction and a Curvature-Guided Flow Matching Action Head (right) for precise motion generation.
         </h2>
       </div>
-      <div class="item">
+      <!-- <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
+        <!-- <img src="static/images/representation.png" alt="Second research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
           Second image description.
-        </h2>
-      </div>
+        </h2> -->
+      <!-- </div> --> -->
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
+        <img src="static/images/method.png" alt="Third research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
          Third image description.
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
+      <img src="static/images/tasks.png" alt="Fourth research result visualization" loading="lazy"/>
       <h2 class="subtitle has-text-centered">
         Fourth image description.
       </h2>
@@ -421,59 +421,239 @@ SE(3)-equivariant feature extraction and a Curvature-Guided Flow Matching Action
 
 
 
-<!-- Youtube video -->
+<!-- Simulated Experiments -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
       <h2 class="title is-3">Simulated Experiments</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      
+      <!-- RLbench Category -->
+      <div class="task-section">
+        <h3 class="task-title">RLbench</h3>
+        <div class="task-videos">
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/simulation/RLbench/close_door.mp4" type="video/mp4">
+            </video>
+            <div class="video-task-name">Close Door</div>
+          </div>
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/simulation/RLbench/frame_hanger.mp4" type="video/mp4">
+            </video>
+            <div class="video-task-name">Frame Hanger</div>
+          </div>
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/simulation/RLbench/open_box.mp4" type="video/mp4">
+            </video>
+            <div class="video-task-name">Open Box</div>
+          </div>
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/simulation/RLbench/open_fridge.mp4" type="video/mp4">
+            </video>
+            <div class="video-task-name">Open Fridge</div>
+          </div>
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/simulation/RLbench/open_oven.mp4" type="video/mp4">
+            </video>
+            <div class="video-task-name">Open Oven</div>
+          </div>
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/simulation/RLbench/place_books.mp4" type="video/mp4">
+            </video>
+            <div class="video-task-name">Place Books</div>
+          </div>
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/simulation/RLbench/shoes_box.mp4" type="video/mp4">
+            </video>
+            <div class="video-task-name">Shoes Box</div>
+          </div>
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/simulation/RLbench/unplug_charger.mp4" type="video/mp4">
+            </video>
+            <div class="video-task-name">Unplug Charger</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Robomimic Category -->
+      <div class="task-section">
+        <h3 class="task-title">Robomimic</h3>
+        <div class="task-videos">
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/simulation/Robomimic/coffee_d1.mp4" type="video/mp4">
+            </video>
+            <div class="video-task-name">Coffee</div>
+          </div>
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/simulation/Robomimic/hammer_cleanup_d1(2).mp4" type="video/mp4">
+            </video>
+            <div class="video-task-name">Hammer_cleanup_d1</div>
+          </div>
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/simulation/Robomimic/mug_cleanup_d0(1).mp4" type="video/mp4">
+            </video>
+            <div class="video-task-name">Mug_cleanup_d0</div>
+          </div>
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/simulation/Robomimic/nuts_assemble_d0.mp4" type="video/mp4">
+            </video>
+            <div class="video-task-name">Nuts_assemble_d0</div>
+          </div>
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/simulation/Robomimic/square_d2.mp4" type="video/mp4">
+            </video>
+            <div class="video-task-name">Square_d2</div>
+          </div>
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/simulation/Robomimic/stack_d1(1).mp4" type="video/mp4">
+            </video>
+            <div class="video-task-name">Stack_d1</div>
+          </div>
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/simulation/Robomimic/threading_d1.mp4" type="video/mp4">
+            </video>
+            <div class="video-task-name">Threading_d1</div>
+          </div>
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/simulation/Robomimic/three_piece_assemble_d0(2).mp4" type="video/mp4">
+            </video>
+            <div class="video-task-name">Three_piece_assemble_d0</div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
+<!-- End Simulated Experiments -->
 
 
-<!-- Video carousel -->
+<!-- Real-World Experiments -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Real-World Experiments</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
+      
+      <!-- Sorting Task -->
+      <div class="task-section">
+        <h3 class="task-title">Sorting</h3>
+        <div class="task-videos">
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/sorting-1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/sorting-2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/sorting-3.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/sorting-4.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
+      </div>
+
+      <!-- Hanoi Task -->
+      <div class="task-section">
+        <h3 class="task-title">Hanoi</h3>
+        <div class="task-videos">
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/hanoi-1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/hanoi-2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/hanoi-3.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/hanoi-4.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
+      </div>
+
+      <!-- Insert Task -->
+      <div class="task-section">
+        <h3 class="task-title">Insert Battery</h3>
+        <div class="task-videos">
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/insert-1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/insert-2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/insert-3.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/insert-4.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hammer Cleanup Task -->
+      <div class="task-section">
+        <h3 class="task-title">Hammer Cleanup</h3>
+        <div class="task-videos">
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/hammer-1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/hammer-2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="task-video-item">
+            <video controls muted loop preload="metadata">
+              <source src="static/videos/hammer-3.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
+<!-- End Real-World Experiments -->
 
 
 

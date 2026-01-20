@@ -290,6 +290,78 @@ body {
   font-weight: 500;
 }
 
+/* Task-based Video Grid Layout */
+.task-section {
+  margin-bottom: 4rem;
+}
+
+.task-section:last-child {
+  margin-bottom: 0;
+}
+
+.task-title {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 1.75rem !important;
+  font-weight: 700 !important;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem !important;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.task-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 2px;
+  background: var(--gradient-accent);
+  border-radius: 2px;
+}
+
+.task-videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.task-video-item {
+  position: relative;
+  width: 100%;
+  background: var(--background-primary);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  transition: var(--transition);
+  border: 1px solid var(--border-color);
+}
+
+.task-video-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.task-video-item video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--border-radius-lg);
+}
+
+.video-task-name {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: 0.75rem;
+  padding: 0.5rem;
+  font-family: 'Inter', sans-serif;
+}
+
 /* Pagination and Misc Improvements */
 .slider-pagination .slider-page {
   background: var(--primary-color);
@@ -654,6 +726,21 @@ code {
   .content.has-text-justified {
     font-size: 1rem;
   }
+
+  .task-section {
+    margin-bottom: 3rem;
+  }
+
+  .task-title {
+    font-size: 1.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .task-videos {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -704,6 +791,11 @@ code {
   
   .publication-header .hero-body {
     padding: 4rem 2rem 3rem;
+  }
+
+  .task-videos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
   }
 }
 
